@@ -1,14 +1,21 @@
 # Scratch Notes for the CTERA SDK for Python 
 
-### Set up
+## Table of contents
+
+1. [Set Up](#setup)
+2. [Network Info](#netinfo)
+3. [Cloud Services](#services)
+
+### Set Up, Login, Insantiate a Filer <a name='setup'></a>
 
     >>> from cterasdk import *
     >>> admin = GlobalAdmin('<portal-url-or-ip')
     >>> admin.login('admin','<your-password>')
     2021-01-15 14:55:32,911    INFO [login.py:19] [login] - User logged in. {'host': 'todd.ctera.me', 'user': 'admin'}
     >>> filer = admin.devices.device('todd-vgateway')
+    >>>
 
-### Get Network Info
+### Get Network Info <a name='netinfo'></a>
 
     >>> net_status = filer.network.get_status()
     >>> print(net_status)
@@ -36,9 +43,8 @@
     }
     >>>
 
-### Get Cloud Services info
+### Get Cloud Services info <a name='services'></a>
 
-    >>>
     >>> services = filer.services.get_status()
     >>> print(services)
     {
@@ -49,3 +55,4 @@
          "server_address": "192.168.22.173",
          "last_connected_at": "2021-01-07T14:43:44"
     }
+    >>>
