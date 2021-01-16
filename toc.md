@@ -1,5 +1,7 @@
 # Table of contents
 
+A template for creating a table of contents in a markdown file.
+
 1. [Introduction](#introduction)
 2. [Some paragraph](#paragraph1)
     1. [Sub paragraph](#subparagraph1)
