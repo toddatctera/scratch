@@ -4,8 +4,9 @@
 
 1. [Set Up](#setup)
 2. [Cloud Sync](#sync)
-2. [Network Info](#netinfo)
-3. [Cloud Services](#services)
+3. [Network Info](#netinfo)
+4. [Cloud Services](#services)
+5. [CTERA SDK Builder](#builder)
 
 ### Set Up, Login, Insantiate a Filer <a name='setup'></a>
 
@@ -93,3 +94,15 @@
          "last_connected_at": "2021-01-07T14:43:44"
     }
     >>>
+
+### CTERA SDK Builder <a name='builder'></a>
+
+1. Log into the AWS Delivery Lab account: 
+[AWS Delivery Lab Console](https://d-906771d86b.awsapps.com/start/#/saml/custom/126579391395%20%28CTERA%20Delivery%20%26%20Lab%29/MTI3NTMwODM3NTM4X2lucy0yYWJkZjM0OGMwMGY4ZjE5X3AtMTdhYTgwZWU0Nzc1MTZmOA%3D%3D)
+
+2. Use Session Manager to connect to the instance:
+[CTERA SDK Builder Instance](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#ConnectToInstance:instanceId=i-0967437206eaa607d)
+
+3. Write a script
+
+4. Run `pyinstaller <script.py> --onefile`
