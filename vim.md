@@ -10,3 +10,7 @@
 ### System wide nvim config location
     /etc/xdg/nvim/sysinit.vim
 [system wide nvim config](https://jdhao.github.io/2019/11/10/install_config_neovim_system_wide/)
+
+### Neovim System Clipboard Support Wayland clipboard 
+    clipboard+=unnamedplus
+[neovim clipboard provider doc](https://neovim.io/doc/user/provider.html#clipboard)
