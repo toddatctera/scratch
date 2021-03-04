@@ -7,9 +7,13 @@
 
 [yank into search register](https://stackoverflow.com/questions/2312844/vim-yank-into-search-register)
 
-### System wide nvim config location
+### nvim config location
+    # personal config
+    $HOME/.config/nvim/init.vim
+    # system wide config
     /etc/xdg/nvim/sysinit.vim
 [system wide nvim config](https://jdhao.github.io/2019/11/10/install_config_neovim_system_wide/)
+
 
 ### Neovim System Clipboard Support Wayland clipboard 
     clipboard+=unnamedplus
