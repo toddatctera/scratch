@@ -8,10 +8,14 @@
 [yank into search register](https://stackoverflow.com/questions/2312844/vim-yank-into-search-register)
 
 ### nvim config location
+
     # personal config
     $HOME/.config/nvim/init.vim
     # system wide config
     /etc/xdg/nvim/sysinit.vim
+    # Windows personal config
+    C:\Users\<logon-name>\AppData\Local\nvim\init.vim
+    
 [system wide nvim config](https://jdhao.github.io/2019/11/10/install_config_neovim_system_wide/)
 
 
@@ -30,3 +34,18 @@
     3. :source $MYVIMRC
 
 [how to use the windows clipboard from wsl](https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl)
+
+### Example config
+
+```
+set clipboard+=unnamedplus      " yank and such to system clipboard
+set number                      " show line numbers
+set relativenumber              " useful for motions
+set ruler                       " always show the cursor line and col position
+set cursorline                  " highlight the current line
+set nowrap                      " don't wrap long horizontal lines.
+set splitbelow                  " split below
+set splitright                  " split right
+set scrolloff=8                 " scroll offset
+set sidescroll=10               " see context when scrolling horizontally
+```
